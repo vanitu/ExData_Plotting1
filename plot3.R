@@ -22,11 +22,10 @@ lines(consumpt$Date,consumpt$Sub_metering_2,col='red')
 lines(consumpt$Date,consumpt$Sub_metering_3,col='green')
 
 #Adding Legend
-legend("topright" ,lty=1,col = c('black',"blue", "red"), cex=.7,legend = c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"))
+legend("topright" ,bty='n',lty=1,col = c('black',"blue", "red"), cex=.5,legend = c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"))
 
 
 #Copy Plot to PNG file
 dev.copy(png, file = "plot3.png",width=480,height=480)
 dev.off()
-
 
